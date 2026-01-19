@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #fbe9f7, #fff7e6);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #6a4fb3;
+}
+
+.subtitle {
+  margin-top: 5px;
+  color: #777;
+}
+
+.details {
+  margin: 20px 0;
+}
+
+.info p {
+  margin: 6px 0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #6a4fb3;
+  color: white;
+  font-size: 16px;
+}
