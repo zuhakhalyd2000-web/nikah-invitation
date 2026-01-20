@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome | H & M Nikah</title>
-  
-  <!-- Calligraphic Font -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikkah Invitation</title>
+
+  <!-- Calligraphy Font -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  
+
   <!-- CSS -->
   <link rel="stylesheet" href="welcome.css">
 </head>
+
 <body>
-  <div class="container">
-    <div class="letters">
-      <h1>H & M</h1>
+  <div class="wrapper">
+    <h2 class="title">Nikkah Invitation</h2>
+
+    <div class="circle">
+      <span class="letters">H & M</span>
     </div>
-    <button onclick="openInvitation()">Open Invitation</button>
+
+    <p class="dua">ٱلْحَمْدُ لِلَّٰهِ</p>
+
+    <button class="open-btn" onclick="openInvitation()">
+      💖 Open Invitation
+    </button>
   </div>
 
   <script>
-function openInvitation() {
-  window.location.href = "invitation.html"; // points to your main invitation page
-}
-</script>
+    function openInvitation() {
+      window.location.href = "invitation.html";
+    }
+  </script>
 </body>
 </html>
+
+
 
