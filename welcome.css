@@ -2,65 +2,85 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Great Vibes', cursive;
 }
 
+/* Background */
 body {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #fff1e6, #fde6d3);
+  background: linear-gradient(to bottom, #fffaf5, #fdeede);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Floral Corners */
+.flower {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: url("white-rose.png") no-repeat center/contain;
+  opacity: 0.9;
+}
+
+.top-left { top: 0; left: 0; }
+.top-right { top: 0; right: 0; transform: scaleX(-1); }
+.bottom-left { bottom: 0; left: 0; transform: scaleY(-1); }
+.bottom-right { bottom: 0; right: 0; transform: scale(-1); }
+
+/* Center Content */
 .wrapper {
   text-align: center;
+  z-index: 2;
 }
 
+/* Title */
 .title {
-  font-size: 36px;
-  color: #9b4a1b;
+  font-family: "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #8b5a2b;
   margin-bottom: 30px;
 }
 
+/* Circular Badge */
 .circle {
   width: 260px;
   height: 260px;
-  background: #f1ede8;
+  background: #f7f2ec;
   border-radius: 50%;
-  border: 10px solid #ffffff;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  border: 8px solid #d4af37; /* gold */
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 25px;
+  margin: 0 auto 40px;
 }
 
+/* H & M */
 .letters {
-  font-size: 80px;
-  color: #c9a26b;
+  font-family: 'Great Vibes', cursive;
+  font-size: 85px;
+  color: #d4af37;
 }
 
-.dua {
-  font-size: 28px;
-  color: #9b4a1b;
-  margin: 20px 0 30px;
-}
-
+/* Golden Button */
 .open-btn {
-  background: linear-gradient(135deg, #b87333, #8b4513);
-  color: #fff;
+  background: linear-gradient(135deg, #f6d365, #d4af37);
+  color: #5a3a14;
+  font-family: "Times New Roman", serif;
   font-size: 20px;
-  padding: 14px 40px;
+  font-weight: bold;
+  padding: 14px 42px;
   border: none;
-  border-radius: 30px;
+  border-radius: 35px;
   cursor: pointer;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 12px 30px rgba(212,175,55,0.5);
   transition: all 0.3s ease;
 }
 
 .open-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(212,175,55,0.7);
 }
-
