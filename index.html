@@ -1,45 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikkah Invitation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikah Invitation</title>
 
-  <!-- Calligraphy Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="welcome.css">
+body {
+  background-image: url("welcome.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+button {
+  margin-bottom: 50px;
+  padding: 14px 42px;
+  border: none;
+  border-radius: 40px;
+  background: #8b4513;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
 </head>
 
 <body>
-  <!-- Floral Corners -->
-  <div class="flower top-left"></div>
-  <div class="flower top-right"></div>
-  <div class="flower bottom-left"></div>
-  <div class="flower bottom-right"></div>
-
-  <div class="wrapper">
-    <h1 class="title">Nikkah Invitation</h1>
-
-    <div class="circle">
-      <span class="letters">H & M</span>
-    </div>
-
-    <button class="open-btn" onclick="openInvitation()">
-      ✨ Open Invitation
-    </button>
-  </div>
-
-  <script>
-    function openInvitation() {
-      window.location.href = "invitation.html";
-    }
-  </script>
+  <button onclick="location.href='invitation.html'">
+    Open Invitation
+  </button>
 </body>
 </html>
-
-
-
-
-
